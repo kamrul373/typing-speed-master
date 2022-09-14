@@ -11,7 +11,8 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
-.box-container {
+.box-container,
+.blog-container {
   width: 70%;
   margin: 0 auto;
 }
@@ -185,6 +186,58 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  padding: 20px
+}
+
+ul {
+  list-style: none;
+}
+
+.menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px
+}
+
+.menu li:hover a {
+  color: #9dffad;
+}
+
+/* blogs */
+.blog-container {
+  color: #FFFFFF;
+  padding: 70px 0;
+}
+
+.blog {
+  margin: 40px 0;
+}
+
+.content {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.content p {
+  margin: 15px 0;
+}
+
+.content span {
+  color: #9dffad;
+}
+
+.heading h1 {
+  color: #9dffad;
+  font-weight: bold;
+  font-size: 45px;
 }
 
 @media only screen and (max-width: 768px) {

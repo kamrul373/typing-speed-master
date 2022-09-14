@@ -13,9 +13,21 @@
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- blogs -->
     <div class="blog-container">
         <!-- blog 1 -->
-        <div class="blog blog-1">
+        <div class="blog blog-1" id="local">
             <div class="heading">
                 <h1>Difference Between Local Storage, Session Storage And Cookies</h1>
             </div>
@@ -50,7 +62,7 @@
             </div>
         </div>
         <!-- blog 2 -->
-        <div class="blog blog-2">
+        <div class="blog blog-2" id="global">
             <div class="heading">
                 <h1>Difference Between Global & Block scope in JS</h1>
             </div>
@@ -90,7 +102,7 @@
             </div>
         </div>
         <!-- blog 4 -->
-        <div class="blog blog-3">
+        <div class="blog blog-3" id="event">
             <div class="heading">
                 <h1>Event Loop in JS</h1>
             </div>
@@ -118,7 +130,7 @@
                 </p>
             </div>
         </div>
-        <div class="blog blog-4">
+        <div class="blog blog-4" id="undefined">
             <div class="heading">
                 <h1>How many ways we can get undefined in javascript</h1>
             </div>
@@ -143,6 +155,15 @@
                     <li>If you explicitly delete an array item , then there will be undefined</li>
                 </ul>
             </div>
+        </div>
+        <div class="blog-menu">
+            <h2>Blogs</h2>
+            <ul>
+                <li><a href="#local">Difference Between Local Storage, Session Storage And Cookies</a></li>
+                <li><a href="#global">Difference Between Global & Block scope in JS</a></li>
+                <li><a href="#event">Event Loop in JS</a></li>
+                <li><a href="#undefined">How many ways we can get undefined in javascript</a></li>
+            </ul>
         </div>
     </div>
 </body>

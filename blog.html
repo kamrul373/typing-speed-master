@@ -14,84 +14,94 @@
 
 <body>
     <!-- navbar -->
-    <nav>
-        <ul class="menu">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- blogs -->
-    <div class="blog-container">
-        <!-- blog 1 -->
-        <div class="blog blog-1" id="local">
-            <div class="heading">
-                <h1>Difference Between Local Storage, Session Storage And Cookies</h1>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- blogs -->
+        <div class="blog-container">
+            <!-- blog 1 -->
+            <div class="blog blog-1" id="local">
+                <div class="heading">
+                    <h1>Difference Between Local Storage, Session Storage And Cookies</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        The difference between <span>sessionStorage</span> and <span>localStorage</span> is that
+                        localStorage data does not expire,
+                        whereas
+                        sessionStorage data is cleared when the page session ends.
+                    </p>
+                    <img src="img/blog-1.jpg" width="400px" alt="">
+                    <p>
+                        <span>LocalStorage</span> is a type of web storage that allows you to access a local Storage
+                        object
+                        and store the data in the browser with no expiration date. This means the data stored in the
+                        browser
+                        will persist even after the browser window has been closed.
+                    </p>
+                    <p>
+                        <span>Local storage</span> has 4 methods:
+                    <ul>
+                        <li>setItem() Method </li>
+                        <li>getItem() Method </li>
+                        <li>removeItem() Method </li>
+                        <li>clear() Method </li>
+                    </ul>
+                    </p>
+                    <p> A new session is created each time a tab or window is opened, Closing a window/tab ends the
+                        session
+                        and clears sessionStorage objects.</p>
+                    <p>
+                        <span>Session storage</span> has also 4 methods similar to Local Storage - setItem(), getItem(),
+                        removeItem(), clear();
+                    </p>
+                </div>
             </div>
-            <div class="content">
-                <p>
-                    The difference between <span>sessionStorage</span> and <span>localStorage</span> is that
-                    localStorage data does not expire,
-                    whereas
-                    sessionStorage data is cleared when the page session ends.
-                </p>
-                <img src="img/blog-1.jpg" width="400px" alt="">
-                <p>
-                    <span>LocalStorage</span> is a type of web storage that allows you to access a local Storage object
-                    and store the data in the browser with no expiration date. This means the data stored in the browser
-                    will persist even after the browser window has been closed.
-                </p>
-                <p>
-                    <span>Local storage</span> has 4 methods:
-                <ul>
-                    <li>setItem() Method </li>
-                    <li>getItem() Method </li>
-                    <li>removeItem() Method </li>
-                    <li>clear() Method </li>
-                </ul>
-                </p>
-                <p> A new session is created each time a tab or window is opened, Closing a window/tab ends the session
-                    and clears sessionStorage objects.</p>
-                <p>
-                    <span>Session storage</span> has also 4 methods similar to Local Storage - setItem(), getItem(),
-                    removeItem(), clear();
-                </p>
-            </div>
-        </div>
-        <!-- blog 2 -->
-        <div class="blog blog-2" id="global">
-            <div class="heading">
-                <h1>Difference Between Global & Block scope in JS</h1>
-            </div>
-            <div class="content">
-                <p>
-                    In programming, the scope of a variable determines its lifetime. The scope describes if a variable,
-                    a function or an object is accessible or inaccessible by different parts of the program during
-                    runtime.
-                </p>
-                <img src="img/blog-2.jpg" width="600px" alt="">
-                <p><span>Block Scope</span></p>
-                <p>
-                    A <span>block</span> is a piece of code inside a set of curly braces {} and groups code statements
-                    together.An example of a block could be a function, like this:
-                </p>
+            <!-- blog 2 -->
+            <div class="blog blog-2" id="global">
+                <div class="heading">
+                    <h1>Difference Between Global & Block scope in JS</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        In programming, the scope of a variable determines its lifetime. The scope describes if a
+                        variable,
+                        a function or an object is accessible or inaccessible by different parts of the program during
+                        runtime.
+                    </p>
+                    <img src="img/blog-2.jpg" width="600px" alt="">
+                    <p><span>Block Scope</span></p>
+                    <p>
+                        A <span>block</span> is a piece of code inside a set of curly braces {} and groups code
+                        statements
+                        together.An example of a block could be a function, like this:
+                    </p>
 
-                <pre>
+                    <pre>
                 const message = () => {
                     const m = "Block Scope Message";
                     console.log(m);
                 }
                 </pre>
-                <p><span><span>Global Scope : </span></span></p>
-                <p>
-                    If a variable is declared outside all functions or curly braces ({}), it exists in the global scope.
-                    The global variables can be accessed by any line of code in the program, including inside blocks.
-                    An example of a global scope like this:
-                </p>
-                <pre>
+                    <p><span><span>Global Scope : </span></span></p>
+                    <p>
+                        If a variable is declared outside all functions or curly braces ({}), it exists in the global
+                        scope.
+                        The global variables can be accessed by any line of code in the program, including inside
+                        blocks.
+                        An example of a global scope like this:
+                    </p>
+                    <pre>
                 const dogSound = "Gheu Gheu | Woof";
                 const animalSound = () => {
                     console.log(dogSound);
@@ -99,73 +109,84 @@
                 animalSound();
                 console.log(dogSound);
                 </pre>
+                </div>
             </div>
-        </div>
-        <!-- blog 4 -->
-        <div class="blog blog-3" id="event">
-            <div class="heading">
-                <h1>Event Loop in JS</h1>
-            </div>
-            <div class="content">
-                <p>
-                    The <span>event loop</span> is the secret behind JavaScript’s asynchronous programming. JS executes
-                    all operations on a single thread, but using a few smart data structures, it gives us the illusion
-                    of multi-threading. Let’s take a look at what happens on the back-end.
-                </p>
-                <img src="img/blog-3.png" width="600px" alt="">
-                <p>
-                    The call stack is responsible for keeping track of all the operations in line to be executed.
-                    Whenever a function is finished, it is popped from the stack.
-                </p>
+            <!-- blog 4 -->
+            <div class="blog blog-3" id="event">
+                <div class="heading">
+                    <h1>Event Loop in JS</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        The <span>event loop</span> is the secret behind JavaScript’s asynchronous programming. JS
+                        executes
+                        all operations on a single thread, but using a few smart data structures, it gives us the
+                        illusion
+                        of multi-threading. Let’s take a look at what happens on the back-end.
+                    </p>
+                    <img src="img/blog-3.png" width="600px" alt="">
+                    <p>
+                        The call stack is responsible for keeping track of all the operations in line to be executed.
+                        Whenever a function is finished, it is popped from the stack.
+                    </p>
 
-                <p>
-                    The event queue is responsible for sending new functions to the stack for processing. It follows the
-                    queue data structure to maintain the correct sequence in which all operations should be sent for
-                </p>
-                <p>
-                    Now we have two stacks with functions to be executed. This is where the Event Loop comes in. Event
-                    Loop’s job is to watch Callback Queue and Call Stack, whenever Call Stack is empty and we have
-                    called in Callback Queue. The event loop will move calls to Call Stack and execute them in
-                    succession.
-                </p>
+                    <p>
+                        The event queue is responsible for sending new functions to the stack for processing. It follows
+                        the
+                        queue data structure to maintain the correct sequence in which all operations should be sent for
+                    </p>
+                    <p>
+                        Now we have two stacks with functions to be executed. This is where the Event Loop comes in.
+                        Event
+                        Loop’s job is to watch Callback Queue and Call Stack, whenever Call Stack is empty and we have
+                        called in Callback Queue. The event loop will move calls to Call Stack and execute them in
+                        succession.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="blog blog-4" id="undefined">
-            <div class="heading">
-                <h1>How many ways we can get undefined in javascript</h1>
+            <div class="blog blog-4" id="undefined">
+                <div class="heading">
+                    <h1>How many ways we can get undefined in javascript</h1>
+                </div>
+                <div class="content">
+                    <p>
+                        <span>Undefined</span> is a primitive value in JavaScript.An undefined value means lack of
+                        value.
+                    </p>
+                    <img src="img/blog-4.jpg" width="600px" alt="">
+                    <ul style="list-style-type:number; padding-left: 30px; margin-top:20px">
+                        <li>When a variable is declared without value , If you call it this variable , then It will
+                            return
+                            <span>undefined</span>
+                        </li>
+                        <li>Function with no return</li>
+                        <li>Parameters that is not passed during functiona call which is decalared in function
+                            defination
+                            arguments will return <span>undefined</span></li>
+                        <li>empty return; will throw <span>undefined</span></li>
+                        <li>When we are trying to access a property of an object which is not exists inside object will
+                            return <span>undefined</span></li>
+                        <li>When we are trying to access an array index which is not exists in array then returns
+                            <span>undefined</span>
+                        </li>
+                        <li>If you explicitly delete an array item , then there will be undefined</li>
+                    </ul>
+                </div>
             </div>
-            <div class="content">
-                <p>
-                    <span>Undefined</span> is a primitive value in JavaScript.An undefined value means lack of value.
-                </p>
-                <img src="img/blog-4.jpg" width="600px" alt="">
-                <ul style="list-style-type:number; padding-left: 30px; margin-top:20px">
-                    <li>When a variable is declared without value , If you call it this variable , then It will return
-                        <span>undefined</span>
-                    </li>
-                    <li>Function with no return</li>
-                    <li>Parameters that is not passed during functiona call which is decalared in function defination
-                        arguments will return <span>undefined</span></li>
-                    <li>empty return; will throw <span>undefined</span></li>
-                    <li>When we are trying to access a property of an object which is not exists inside object will
-                        return <span>undefined</span></li>
-                    <li>When we are trying to access an array index which is not exists in array then returns
-                        <span>undefined</span>
-                    </li>
-                    <li>If you explicitly delete an array item , then there will be undefined</li>
+            <div class="blog-menu">
+                <h2>Blogs</h2>
+                <ul>
+                    <li><a href="#local">Difference Between Local Storage, Session Storage And Cookies</a></li>
+                    <li><a href="#global">Difference Between Global & Block scope in JS</a></li>
+                    <li><a href="#event">Event Loop in JS</a></li>
+                    <li><a href="#undefined">How many ways we can get undefined in javascript</a></li>
                 </ul>
             </div>
         </div>
-        <div class="blog-menu">
-            <h2>Blogs</h2>
-            <ul>
-                <li><a href="#local">Difference Between Local Storage, Session Storage And Cookies</a></li>
-                <li><a href="#global">Difference Between Global & Block scope in JS</a></li>
-                <li><a href="#event">Event Loop in JS</a></li>
-                <li><a href="#undefined">How many ways we can get undefined in javascript</a></li>
-            </ul>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2026 Speed Monster</p>
+    </footer>
 </body>
 
 </html>

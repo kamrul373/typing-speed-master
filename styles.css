@@ -227,6 +227,12 @@ ul {
   margin: 20px 0;
 }
 
+.heading h1 {
+  color: #9dffad;
+  font-weight: bold;
+  font-size: 45px;
+}
+
 .content p {
   margin: 15px 0;
 }
@@ -235,11 +241,7 @@ ul {
   color: #9dffad;
 }
 
-.heading h1 {
-  color: #9dffad;
-  font-weight: bold;
-  font-size: 45px;
-}
+
 
 .blog-menu {
   position: fixed;
@@ -279,11 +281,26 @@ footer {
   }
 
   .blog-container {
-    max-width: 80%;
+    max-width: 85%;
+    width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .blog-menu {
     display: none;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
